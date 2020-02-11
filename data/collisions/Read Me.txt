@@ -1,0 +1,40 @@
+Datasets that were considered and not found in this folder:
+
+Quebec, I could not findany data for Montreal or the province in general regarding collisions. I came across many reports and map representations of the data but no datasets available for download.
+
+Edmonton, offers only heatmap data which excludes any date or time features.
+
+British Columbia, requires an account to access provincial or Vancouver municipal data, ovtherwise I did not find Vancouver collision data available for download- only reports and statistics available.
+
+Waterloo region, aggregated data per street location for a single year.
+The National Collission Database:
+http://wwwapps2.tc.gc.ca/Saf-Sec-Sur/7/NCDB-BNDC/p.aspx?l=en
+
+It limits the number of variables and measures, then limits how much is available for download.
+While it provides aggregated information uniformly formatted, it lacks date/time, and location granularity.
+
+------------------------------------------------
+Notes about data included:
+
+Toronto:
+
+- most comprehensive with features
+- hourly
+- covers 2007 through 2017
+- online dashboard available online as reference for what can be shown with data
+- latitude and longitude features can be used to link event to closest weather station with data available
+
+Ottawa:
+
+- Core features are in common with Toronto's data set
+- inlcudes double digit codes appended to string data in many columns, needs extra processing to remove as Toronto does not use these
+- hourly
+- covers years 2014 through 2017 as seperate files
+- only 2017 includes longitude and latitude data in addition to the X Y coordinates, these can be used to approximate latitude and longitude coordinates for the previous years missing this data. Can obtain accurate weather data according to closest weather station as in the Toronto case.
+- inlcudes NON-FATAL and fatal collisions, the toronto data includes ONLY FATAL collisions, to consider during machine learning
+
+Calgary:
+
+- covers 2008 through 2017
+- date only, no time variable
+- includes latitude and longitude
